@@ -70,10 +70,10 @@ const toggleMenu = () => {
         <!-- Menu Desktop -->
         <nav class="hidden lg:flex w-full flex-wrap text-white">
             <ul class="flex flex-row justify-between p-1 my-1 w-2/3 font-poppins text-lg">
-                <li><RouterLink to="/" active-class="active" exact-active-class="excact-active" class="hover:text-secondary">Home</RouterLink></li>
-                <li><RouterLink to="/about" class="hover:text-secondary">About</RouterLink></li>
-                <li><RouterLink to="/service" class="hover:text-secondary">Service</RouterLink></li>
-                <li><RouterLink to="/projects" class="hover:text-secondary">Projects</RouterLink></li>
+                <li><RouterLink to="/" active-class="active" exact-active-class="excact-active" class="relative hover:text-secondary transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-secondary after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Home</RouterLink></li>
+                <li><RouterLink to="/about" class="relative hover:text-secondary transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-secondary after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">About</RouterLink></li>
+                <li><RouterLink to="/service" class="relative hover:text-secondary transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-secondary after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Service</RouterLink></li>
+                <li><RouterLink to="/projects" class="relative hover:text-secondary transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-secondary after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Projects</RouterLink></li>
             </ul>
         </nav>
         <div class="hidden lg:block">

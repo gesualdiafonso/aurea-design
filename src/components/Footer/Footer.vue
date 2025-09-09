@@ -5,18 +5,18 @@ import { RouterLink } from 'vue-router';
 
 <template>
     <footer class="w-full h-auto flex flex-col items-center justify-center pt-10 pb-10 px-10 bg-[#121212] text-[#F2F9FF]">
-        <div class="w-full flex flex-col items-center justify-center lg:flex-row-reverse lg:justify-between ">
-            <!-- maps information of the site -->
-            <div class="hidden lg:flex flex-col gap-2 cursor-pointer">
-                <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/about">About</RouterLink>
-                <RouterLink to="/service">Service</RouterLink>
-                <RouterLink to="/projects">Projects</RouterLink>
-            </div>
+        <div class="w-full flex flex-col items-center justify-center lg:flex-row-reverse lg:justify-between my-4">
             <!-- Company information -->
             <div class="hidden lg:flex flex-col gap-2">
                 <span>• Email address company</span>
                 <span>• Location on link map</span>
+            </div>
+            <!-- maps information of the site -->
+            <div class="hidden lg:flex flex-row gap-2 cursor-pointer">
+                <RouterLink class="hover:text-gray-300 hover:font-bold transition-all duration-300" to="/">Home</RouterLink>
+                <RouterLink class="hover:text-gray-300 hover:font-bold transition-all duration-300" to="/about">About</RouterLink>
+                <RouterLink class="hover:text-gray-300 hover:font-bold transition-all duration-300" to="/service">Service</RouterLink>
+                <RouterLink class="hover:text-gray-300 hover:font-bold transition-all duration-300" to="/projects">Projects</RouterLink>
             </div>
             <!-- brand name and logo -->
             <div>
